@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js – The HTML Presentation Framework</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1 class="idci-logo">IDCI-Consulting</h1>
+            <ul class="motto idci-green">
+                <li>&lt;Ingénerie&gt;</li>
+                <li>&lt;Développement&gt;</li>
+                <li>&lt;Conseil&gt;</li>
+                <li>&lt;Intégration&gt;</li>
+            </ul>
+            <em class="presented-by">présenté par <a href="http://www.idci-consulting.fr/fr/cv/idci/brahim_boukoufallah" target="_blank">Brahim Boukoufallah</a></em>
+        </section>
+
+        <section>
+            <section>
+                <h2 class="idci-green">Qui sommes-nous ?</h2>
+            </section>
+
+            <section>
+                <p>Société de services créée en décembre 2007</p>
+            </section>
+
+            <section>
+                <h4 class="idci-green">Activité principale</h4>
+                <p class="fragment">Conception de sites web</p>
+                <aside class="notes">
+                    <p>Nous utilisons exclusivement des outils open source</p>
+                </aside>
+            </section>
+
+            <section>
+                <p>Sites vitrine</p>
+                <p class="fragment">Applications web plus complexes <span class="fragment">(site e-commerce, gestionnaire d'événements, etc)</span></p>
+
+                <aside class="notes">
+                    <p>On peut développer   de simples  sites  vitrine comme d’applications web PHP plus complexes</p>
+                </aside>
+            </section>
+
+            <section>
+                <h4 class="idci-green">
+                    Spécialisés dans :
+                </h4>
+                <ul>
+                    <li class="fragment">Architecture Web</li>
+                    <li class="fragment">PHP & Symfony</li>
+                </ul>
+            </section>
+
+            <section>
+                <h4 class="idci-green">Mais aussi....</h4>
+                <p class="fragment">Une équipe de consultants</p>
+                <p class="fragment">Des formations</p>
+                <aside class="notes">
+                    <p>Equipe de consultants qui proposent des solutions techniques pour des entreprises faisant appel à nous</p>
+                    <p>Formations..."Dans le domaine du web bien sûr !"</p>
+                    <p>ça peut être pour nos clients pour qu'ils prennent en main leur site, ou pour d’autres entreprises soucieuses de découvrir des technologies.</p>
+                    <p>Actuellement nous faisons des formations sur Prestashop et Symfony</p>
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <h2 class="idci-green">La team</h2>
+
+            <section>
+                <p class="fragment">Composée de 3 développeurs et 1 gérant</p>
+            </section>
+
+            <section>
+                <ul>
+                    <li class="fragment">Frédéric Bondaz (gérant)</li>
+                    <li class="fragment">Gabriel Bondaz (consultant / co-gérant)</li>
+                    <li class="fragment">Baptiste Bouchereau (consultant / co-gérant)</li>
+                    <li class="fragment">Moi (développeur)</li>
+                </ul>
+
+                <aside class="notes">
+                    <p>Je vous les présente par ordre d'arriver</p>
+                    <ul>
+                        <li>fred : Notre gérant et celui qui gère la compta</li>
+                        <li>gab & baptiste : Consultants pour d'autres entreprises </li>
+                    </ul>
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <h2 class="idci-green">Merci de votre écoute</h2>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>

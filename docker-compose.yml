@@ -1,0 +1,10 @@
+
+reveal:
+  image: ovski/node-grunt
+  volumes:
+    - .:/var/www
+  ports:
+    - 8079:8000
+  environment:
+    - VIRTUAL_HOST=idci-presentation.fr
+  restart: always
