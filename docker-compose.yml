@@ -6,4 +6,4 @@ reveal:
   ports:
     - 8054:8000
   environment:
-    - VIRTUAL_HOST=idci-presentation.fr
+    - VIRTUAL_HOST=soutenance.misterbanal.net
