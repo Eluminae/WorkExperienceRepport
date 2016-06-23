@@ -1,6 +1,7 @@
 
 reveal:
   image: ovski/node-grunt
+  restart: always
   volumes:
     - .:/var/www
   ports:
